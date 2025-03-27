@@ -1,0 +1,16 @@
+# C
+COLOR_SILVER = (171, 167, 76)
+COLOR_WHITE = (255, 255, 255)
+COLOR_BLACK = (0, 0, 0)
+COLOR_RED = (235, 51, 36)
+
+# M
+MENU_OPTION = ('NEW GAME (1 PLAYER)',
+               'SCORE',
+               'EXIT')
+
+#  W
+WIN_WIDTH = 2304
+WIN_HEIGHT = 1296
+
+

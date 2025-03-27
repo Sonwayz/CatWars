@@ -18,7 +18,7 @@ class Menu:
         pygame.mixer_music.play(-1)
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(130, "Eclipse of The Soul", COLOR_SILVER, ((WIN_WIDTH / 5.2), 335))
+            self.menu_text(130, "Eclipse of The Soul", COLOR_WHITE, ((WIN_WIDTH / 5.2), 335))
 
             for i in range(len(MENU_OPTION)):
                 self.menu_text(80, MENU_OPTION[i], COLOR_RED, ((WIN_WIDTH / 5.38), 650 + 220 * i))

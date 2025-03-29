@@ -4,7 +4,8 @@ import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import WIN_WIDTH, COLOR_SILVER, MENU_OPTION, COLOR_WHITE, COLOR_BLACK, COLOR_RED, COLOR_YELLOW
+from code.Const import WIN_WIDTH, COLOR_SILVER, MENU_OPTION, COLOR_WHITE, COLOR_BLACK, COLOR_RED, COLOR_YELLOW, \
+    COLOR_PURPLE, COLOR_GREEN
 
 
 class Menu:
@@ -20,13 +21,13 @@ class Menu:
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(100, "Eclipse of The Soul", COLOR_SILVER, ((WIN_WIDTH / 5.2), 335))
+            self.menu_text(100, "DESERT CAT", COLOR_PURPLE, ((WIN_WIDTH / 2), 335))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(70, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH / 5.38), 570 + 150 * i))
+                    self.menu_text(70, MENU_OPTION[i], COLOR_RED, ((WIN_WIDTH / 2), 570 + 150 * i))
                 else:
-                    self.menu_text(70, MENU_OPTION[i], COLOR_RED, ((WIN_WIDTH / 5.38), 570 + 150 * i))
+                    self.menu_text(70, MENU_OPTION[i], COLOR_GREEN, ((WIN_WIDTH / 2), 570 + 150 * i))
             pygame.display.flip()
 
             # Check for all events

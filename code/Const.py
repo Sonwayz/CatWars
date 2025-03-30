@@ -9,6 +9,7 @@ COLOR_YELLOW = (235, 253, 85)
 COLOR_GREEN = (55, 126, 71)
 COLOR_PINK = (234, 54, 128)
 COLOR_PURPLE = (116, 27, 124)
+COLOR_ORANGE = (240, 134, 80)
 
 # E
 EVENT_ENEMY = pygame.USEREVENT + 1
@@ -21,9 +22,23 @@ ENTITY_SPEED = {
     'Level1Bg5' : 5,
     'Player1'   : 6,
     'Player2'   : 6,
-    'Enemy1'    : 2,
-    'Enemy2'    : 1,
-    'Enemy3'    : 2,
+    'Enemy1'    : 3,
+    'Enemy2'    : 2,
+    'Enemy3'    : 3,
+}
+
+ENTITY_HEALTH = {
+    'Level1Bg0': 999,
+    'Level1Bg1': 999,
+    'Level1Bg2': 999,
+    'Level1Bg3': 999,
+    'Level1Bg4': 999,
+    'Level1Bg5': 999,
+    'Player1'  : 300,
+    'Player2'  : 300,
+    'Enemy1'   : 50,
+    'Enemy2'   : 60,
+    'Enemy3'   : 70,
 }
 
 # M

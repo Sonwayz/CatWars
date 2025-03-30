@@ -1,11 +1,13 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+from tkinter import Listbox
+
 import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
 from code.Const import WIN_WIDTH, COLOR_SILVER, MENU_OPTION, COLOR_WHITE, COLOR_BLACK, COLOR_RED, COLOR_YELLOW, \
-    COLOR_PURPLE, COLOR_GREEN
+    COLOR_PURPLE, COLOR_GREEN, COLOR_ORANGE
 
 
 class Menu:
@@ -21,13 +23,13 @@ class Menu:
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(100, "DESERT CAT", COLOR_PURPLE, ((WIN_WIDTH / 2), 335))
+            self.menu_text(100, "DESERT SHOOTER", COLOR_ORANGE, ((WIN_WIDTH / 1.65), 335))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(70, MENU_OPTION[i], COLOR_RED, ((WIN_WIDTH / 2), 570 + 150 * i))
+                    self.menu_text(70, MENU_OPTION[i], COLOR_PURPLE, ((WIN_WIDTH / 2), 650 + 85 * i))
                 else:
-                    self.menu_text(70, MENU_OPTION[i], COLOR_GREEN, ((WIN_WIDTH / 2), 570 + 150 * i))
+                    self.menu_text(70, MENU_OPTION[i], COLOR_GREEN, ((WIN_WIDTH / 2), 650 + 85 * i))
             pygame.display.flip()
 
             # Check for all events
@@ -52,10 +54,11 @@ class Menu:
 
 
     def menu_text(self, text_size: int, text: str, text_color: tuple, text_center_pos: tuple):
-        text_font: Font = pygame.font.SysFont(name="Bloodstone Italic", size=text_size)
+        text_font: Font = pygame.font.SysFont(name='Lucida Sans Typewrites', size=text_size)
         text_surf: Surface = text_font.render(text, True, text_color).convert_alpha()
         text_rect: Rect = text_surf.get_rect(center=text_center_pos)
         self.window.blit(source=text_surf, dest=text_rect)
+
 
 
 

@@ -1,14 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from tkinter import Listbox
 
 import pygame.image
 from pygame import Surface, Rect
 from pygame.font import Font
 
-from code.Const import WIN_WIDTH, COLOR_SILVER, MENU_OPTION, COLOR_WHITE, COLOR_BLACK, COLOR_RED, COLOR_YELLOW, \
-    COLOR_PURPLE, COLOR_GREEN, COLOR_ORANGE
-
+from code.Const import WIN_WIDTH, C_SILVER, MENU_OPTION, C_WHITE, C_BLACK, C_RED, C_YELLOW, \
+    C_PURPLE, C_GREEN, C_ORANGE
 
 class Menu:
     def __init__(self, window):
@@ -23,13 +21,13 @@ class Menu:
         while True:
             # DRAW IMAGES
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text(100, "DESERT SHOOTER", COLOR_ORANGE, ((WIN_WIDTH / 1.65), 335))
+            self.menu_text(100, "DESERT SHOOTER", C_ORANGE, ((WIN_WIDTH / 1.65), 335))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(70, MENU_OPTION[i], COLOR_PURPLE, ((WIN_WIDTH / 2), 650 + 85 * i))
+                    self.menu_text(70, MENU_OPTION[i], C_PURPLE, ((WIN_WIDTH / 2), 650 + 85 * i))
                 else:
-                    self.menu_text(70, MENU_OPTION[i], COLOR_GREEN, ((WIN_WIDTH / 2), 650 + 85 * i))
+                    self.menu_text(70, MENU_OPTION[i], C_GREEN, ((WIN_WIDTH / 2), 650 + 85 * i))
             pygame.display.flip()
 
             # Check for all events

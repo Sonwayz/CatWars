@@ -1,18 +1,38 @@
 # C
 import pygame
 
-COLOR_SILVER = (171, 167, 76)
-COLOR_WHITE = (255, 255, 255)
-COLOR_BLACK = (0, 0, 0)
-COLOR_RED = (235, 51, 36)
-COLOR_YELLOW = (235, 253, 85)
-COLOR_GREEN = (55, 126, 71)
-COLOR_PINK = (234, 54, 128)
-COLOR_PURPLE = (116, 27, 124)
-COLOR_ORANGE = (240, 134, 80)
+C_SILVER = (171, 167, 76)
+C_WHITE = (255, 255, 255)
+C_BLACK = (0, 0, 0)
+C_RED = (235, 51, 36)
+C_YELLOW = (235, 253, 85)
+C_GREEN = (0, 128, 0)
+C_PINK = (234, 54, 128)
+C_PURPLE = (116, 27, 124)
+C_ORANGE = (240, 134, 80)
+C_CYAN = (0, 128, 128)
 
 # E
 EVENT_ENEMY = pygame.USEREVENT + 1
+
+ENTITY_DAMAGE =  {
+    'Level1Bg0': 0,
+    'Level1Bg1': 0,
+    'Level1Bg2': 0,
+    'Level1Bg3': 0,
+    'Level1Bg4': 0,
+    'Level1Bg5': 0,
+    'Player1'  : 1,
+    'Player1Shoot': 25,
+    'Player2'  : 1,
+    'Player2Shoot': 25,
+    'Enemy1'   : 1,
+    'Enemy1Shoot': 20,
+    'Enemy2'   : 1,
+    'Enemy2Shoot': 15,
+    'Enemy3'   : 1,
+    'Enemy3Shoot': 12,
+}
 
 ENTITY_HEALTH = {
     'Level1Bg0': 999,
@@ -25,11 +45,11 @@ ENTITY_HEALTH = {
     'Player1Shoot': 1,
     'Player2'  : 300,
     'Player2Shoot': 1,
-    'Enemy1'   : 50,
+    'Enemy1'   : 100,
     'Enemy1Shoot': 1,
-    'Enemy2'   : 60,
+    'Enemy2'   : 150,
     'Enemy2Shoot': 1,
-    'Enemy3'   : 70,
+    'Enemy3'   : 200,
     'Enemy3Shoot': 1,
 }
 
@@ -49,7 +69,7 @@ ENTITY_SPEED = {
     'Level1Bg4'    : 4,
     'Level1Bg5'    : 5,
     'Player1'      : 3,
-    'Player1Shoot' : 1,
+    'Player1Shoot' : 5,
     'Player2'      : 3,
     'Player2Shoot' : 3,
     'Enemy1'       : 1,
@@ -58,6 +78,25 @@ ENTITY_SPEED = {
     'Enemy2Shoot'  : 2,
     'Enemy3'       : 1,
     'Enemy3Shoot'  : 2,
+}
+
+ENTITY_SCORE = {
+    'Level1Bg0'    : 0,
+    'Level1Bg1'    : 0,
+    'Level1Bg2'    : 0,
+    'Level1Bg3'    : 0,
+    'Level1Bg4'    : 0,
+    'Level1Bg5'    : 0,
+    'Player1'      : 0,
+    'Player1Shoot' : 0,
+    'Player2'      : 0,
+    'Player2Shoot' : 0,
+    'Enemy1'       : 100,
+    'Enemy1Shoot'  : 0,
+    'Enemy2'       : 125,
+    'Enemy2Shoot'  : 0,
+    'Enemy3'       : 150,
+    'Enemy3Shoot'  : 0,
 }
 
 # M

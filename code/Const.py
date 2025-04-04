@@ -159,29 +159,29 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_LSHIFT,
                     'Player2': pygame.K_RSHIFT}
 
 # S
-SPAWN_TIME = 4000
+SPAWN_TIME = 100
 
 # T
 TIMEOUT_STEP = 100  # 100ms
-TIMEOUT_LEVEL = 5000  # 60 segundos
+TIMEOUT_LEVEL = 10000  # 60 segundos
 
 #  W
 WIN_WIDTH = 1920
 WIN_HEIGHT = 1080
 
 # SCORE
-SCORE_POS = {'Title':     (WIN_WIDTH / 2, 50),
-             'EnterName': (WIN_WIDTH / 2, 80),
-             'Label':     (WIN_WIDTH / 2, 90),
-             'Name':      (WIN_WIDTH / 2, 110),
-             0: (WIN_WIDTH / 2, 110),
-             1: (WIN_WIDTH / 2, 130),
-             2: (WIN_WIDTH / 2, 150),
-             3: (WIN_WIDTH / 2, 170),
-             4: (WIN_WIDTH / 2, 190),
-             5: (WIN_WIDTH / 2, 210),
-             6: (WIN_WIDTH / 2, 230),
-             7: (WIN_WIDTH / 2, 250),
-             8: (WIN_WIDTH / 2, 270),
-             9: (WIN_WIDTH / 2, 290),
+SCORE_POS = {'Title':     (WIN_WIDTH / 2, 100),
+             'EnterName': (WIN_WIDTH / 2, 180),
+             'Label':     (WIN_WIDTH / 2, 220),
+             'Name':      (WIN_WIDTH / 2, 260),
+             0: (WIN_WIDTH / 2, 300),
+             1: (WIN_WIDTH / 2, 400),
+             2: (WIN_WIDTH / 2, 500),
+             3: (WIN_WIDTH / 2, 600),
+             4: (WIN_WIDTH / 2, 700),
+             5: (WIN_WIDTH / 2, 800),
+             6: (WIN_WIDTH / 2, 900),
+             7: (WIN_WIDTH / 2, 1000),
+             8: (WIN_WIDTH / 2, 1100),
+             9: (WIN_WIDTH / 2, 1200),
              }

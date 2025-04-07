@@ -39,9 +39,9 @@ ENTITY_DAMAGE = {
     'Enemy1': 1,
     'Enemy1Shoot': 20,
     'Enemy2': 1,
-    'Enemy2Shoot': 15,
+    'Enemy2Shoot': 25,
     'Enemy3': 1,
-    'Enemy3Shoot': 12,
+    'Enemy3Shoot': 30,
 }
 
 ENTITY_HEALTH = {
@@ -159,7 +159,7 @@ PLAYER_KEY_SHOOT = {'Player1': pygame.K_LSHIFT,
                     'Player2': pygame.K_RSHIFT}
 
 # S
-SPAWN_TIME = 100
+SPAWN_TIME = 4000
 
 # T
 TIMEOUT_STEP = 100  # 100ms
